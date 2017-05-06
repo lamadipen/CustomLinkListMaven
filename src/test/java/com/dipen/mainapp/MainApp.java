@@ -22,6 +22,10 @@ public class MainApp {
         customLinkList.addNode(2);
         customLinkList.addNode(3);
         customLinkList.addNode(4);
+        customLinkList.addNode(4);
+        customLinkList.addNode(4);
+        customLinkList.addNode(4);
+        customLinkList.addNode(4);
 
         //remove last node of customLinkList
         //customLinkList.removeNode();

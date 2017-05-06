@@ -58,20 +58,25 @@ public class CustomLinkList {
 
         while (currentNode.getNextNode().getData() > target)
         {
-            currentNode.setNextNode(currentNode.getNextNode().getNextNode());
-
-            if(currentNode.getNextNode().getNextNode() == null)
+            if(currentNode.getNextNode().getNextNode() != null)
             {
+                currentNode.setNextNode(currentNode.getNextNode().getNextNode());
+                if(currentNode.getNextNode().getData() == target)
+                {
+                    currentNode = currentNode.getNextNode();
+                }
+                sizeCustomLinkList--;
+            }
+            else{
                 if(currentNode.getNextNode().getData() >target)
                 {
                     currentNode.setNextNode(null);
                     sizeCustomLinkList--;
+                    break;
                 }
-                break;
             }
-            currentNode = currentNode.getNextNode();
-            sizeCustomLinkList--;
         }
+
     }
 
     /** getters and setters to access private data from outside **/
