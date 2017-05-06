@@ -33,10 +33,28 @@ public class CustomLinkListTest {
 
     @Test
     public void removeNode() throws Exception {
+        customLinkList.addNode(1);
+
+        customLinkList.removeNode();
+        int size = customLinkList.getSizeCustomLinkList();
+        assertEquals("Test Success",1,size);
     }
 
     @Test
     public void removeNodeGreaterThanTarget() throws Exception {
+        customLinkList.addNode(1);
+        customLinkList.addNode(5);
+        customLinkList.addNode(2);
+        customLinkList.addNode(3);
+        customLinkList.addNode(4);
+        customLinkList.addNode(4);
+        customLinkList.addNode(4);
+        customLinkList.addNode(4);
+        customLinkList.addNode(4);
+        customLinkList.removeNodeGreaterThanTarget(2);
+        int size = customLinkList.getSizeCustomLinkList();
+        assertEquals("Test Success",2,size);
+
     }
 
 }

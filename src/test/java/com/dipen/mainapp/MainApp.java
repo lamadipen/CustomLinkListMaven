@@ -40,5 +40,7 @@ public class MainApp {
             customLinkList.setRootNode(customLinkList.getRootNode().getNextNode());
         }
 
+        System.out.println(customLinkList.getSizeCustomLinkList());
+
     }
 }
