@@ -61,7 +61,7 @@ public class CustomLinkList {
             if(currentNode.getNextNode().getNextNode() != null)
             {
                 currentNode.setNextNode(currentNode.getNextNode().getNextNode());
-                if(currentNode.getNextNode().getData() == target)
+                if(currentNode.getNextNode().getData() <= target)
                 {
                     currentNode = currentNode.getNextNode();
                 }
