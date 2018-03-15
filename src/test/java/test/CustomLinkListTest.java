@@ -29,6 +29,7 @@ public class CustomLinkListTest {
         customLinkList.addNode(1);
         int addedNodeData = customLinkList.getRootNode().getNextNode().getData();
         assertEquals("Test Success",21,addedNodeData);
+
     }
 
     @Test
